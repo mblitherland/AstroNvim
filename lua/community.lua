@@ -11,6 +11,6 @@ return {
   -- import/override with your plugins folder
   -- These are commented out, currently, because the autoformatting is making PRs rough
   -- { import = "astrocommunity.pack.cs" },
-  -- { import = "astrocommunity.pack.ruby" },
+  { import = "astrocommunity.pack.ruby" },
   { import = "astrocommunity.pack.typescript" },
 }

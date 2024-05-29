@@ -1,3 +1,5 @@
+if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+
 -- This is stolen from AstroCommunity, but omits conform
 
 return {
