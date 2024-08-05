@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- This is stolen from AstroCommunity, but omits conform
 
@@ -17,7 +17,7 @@ return {
     optional = true,
     opts = function(_, opts)
       opts.ensure_installed =
-        require("astrocore").list_insert_unique(opts.ensure_installed, { "solargraph", "standardrb" })
+        require("astrocore").list_insert_unique(opts.ensure_installed, { "ruby_lsp" })
     end,
   },
   {
@@ -25,7 +25,7 @@ return {
     optional = true,
     opts = function(_, opts)
       opts.ensure_installed =
-        require("astrocore").list_insert_unique(opts.ensure_installed, { "solargraph", "standardrb" })
+        require("astrocore").list_insert_unique(opts.ensure_installed, { "ruby_lsp" })
     end,
   },
   {
@@ -33,13 +33,13 @@ return {
     optional = true,
     dependencies = { "suketa/nvim-dap-ruby", config = true },
   },
-  -- {
-  --   "stevearc/conform.nvim",
-  --   optional = true,
-  --   opts = {
-  --     formatters_by_ft = {
-  --       ruby = { "standardrb" },
-  --     },
-  --   },
-  -- },
+  {
+    "stevearc/conform.nvim",
+    optional = true,
+    opts = {
+      formatters_by_ft = {
+        ruby = { "ruby_lsp" },
+      },
+    },
+  },
 }

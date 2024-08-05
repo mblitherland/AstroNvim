@@ -9,9 +9,9 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
   -- import/override with your plugins folder
-  -- These are commented out, currently, because the autoformatting is making PRs rough
   -- NOTE: I only have this enabled on my work machine
   -- { import = "astrocommunity.pack.cs" },
-  { import = "astrocommunity.pack.ruby" },
+  -- NOTE: I'm using `ml-ruby.lua` now.
+  -- { import = "astrocommunity.pack.ruby" },
   { import = "astrocommunity.pack.typescript" },
 }
